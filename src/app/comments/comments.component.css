@@ -1,0 +1,30 @@
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.comment-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.comment-name {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.comment-body {
+  font-size: 1em;
+  color: #666;
+}
+
+.comment-email {
+  font-size: 0.9em;
+  color: #999;
+}
