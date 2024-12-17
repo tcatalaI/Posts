@@ -33,4 +33,13 @@ export class ApiService {
       })
     );
   }
+
+  getTodos(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/todos`).pipe(
+      catchError(error => {
+        console.error('Error fetching todos:', error);
+        return throwError(() => new Error(error));
+      })
+    );
+  }
 }
