@@ -4,8 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { CommentsComponent } from './comments/comments.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { AlbumsComponent } from './albums/albums.component';
+import { AlbumPhotosComponent } from './album-photos/album-photos.component';
 
 const routes: Routes = [
+  { path: 'albums', component: AlbumsComponent },
+  { path: 'albums/:id/photos', component: AlbumPhotosComponent },
   { path: 'calendar', component: CalendarComponent },
   { path: '', component: HomeComponent },
   { path: 'posts', component: PostsComponent },

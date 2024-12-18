@@ -1,0 +1,28 @@
+.photo-gallery {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.photo-item {
+  flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+}
+
+.photo-item img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
+}

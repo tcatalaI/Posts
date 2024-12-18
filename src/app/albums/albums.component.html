@@ -1,0 +1,13 @@
+<div *ngIf="albums.length > 0" class="album-container">
+  <h2>Albums</h2>
+  <div class="album-list">
+    <div *ngFor="let album of albums" class="album-item">
+      <a [routerLink]="['/albums', album.id, 'photos']">
+        <div class="album-title">{{ album.title }}</div>
+      </a>
+    </div>
+  </div>
+</div>
+<div *ngIf="albums.length === 0">
+  <p>No albums found.</p>
+</div>
