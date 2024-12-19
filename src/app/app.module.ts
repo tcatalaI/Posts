@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { CommentsComponent } from './comments/comments.component';
-import { CalendarComponent } from './calendar/calendar.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { AlbumPhotosComponent } from './album-photos/album-photos.component';
 
@@ -19,7 +18,6 @@ import { AlbumPhotosComponent } from './album-photos/album-photos.component';
     HomeComponent,
     PostsComponent,
     CommentsComponent,
-    CalendarComponent,
     AlbumsComponent,
     AlbumPhotosComponent
   ],
