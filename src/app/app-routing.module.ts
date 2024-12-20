@@ -3,13 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { CommentsComponent } from './comments/comments.component';
-import { CalendarComponent } from './calendar/calendar.component';
 
 const routes: Routes = [
-  { path: 'calendar', component: CalendarComponent },
   { path: '', component: HomeComponent },
   { path: 'posts', component: PostsComponent },
-  { path: 'posts/:id/comments', component: CommentsComponent }
+  { path: 'posts/:id/comments', component: CommentsComponent }, // Ruta per als comentaris
 ];
 
 @NgModule({

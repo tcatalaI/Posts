@@ -42,4 +42,31 @@ export class ApiService {
       })
     );
   }
+
+  getUsers(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/users`).pipe(
+      catchError(error => {
+        console.error('Error fetching users:', error);
+        return throwError(() => new Error(error));
+      })
+    );
+  }
+
+  getAlbums(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/albums`).pipe(
+      catchError(error => {
+        console.error('Error fetching albums:', error);
+        return throwError(() => new Error(error));
+      })
+    );
+  }
+
+  getPhotos(albumId: number): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/albums/${albumId}/photos`).pipe(
+      catchError(error => {
+        console.error('Error fetching photos:', error);
+        return throwError(() => new Error(error));
+      })
+    );
+  }
 }

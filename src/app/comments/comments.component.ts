@@ -9,14 +9,15 @@ import { ApiService } from '../api.service';
 })
 export class CommentsComponent implements OnInit {
   comments: any[] = [];
-  postId: number;
+  postId: number = 0;
 
-  constructor(private apiService: ApiService, private route: ActivatedRoute) {
-    this.postId = +this.route.snapshot.paramMap.get('id')!;
-  }
+  constructor(private apiService: ApiService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.loadComments();
+    this.route.params.subscribe(params => {
+      this.postId = +params['id']; // Converteix el paràmetre a número
+      this.loadComments();
+    });
   }
 
   loadComments(): void {
