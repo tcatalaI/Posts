@@ -1,0 +1,44 @@
+[33mcommit 8a579b4a2502e4bb924163f3f689cb876259925d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: eb9b76e e858b03
+Author: Bartomeu Catala Rebassa <162698103+tcatalaI@users.noreply.github.com>
+Date:   Thu Dec 19 12:05:58 2024 +0100
+
+    Merge pull request #1 from tcatalaI/bugfix
+    
+    Bugfix
+
+[33mcommit e858b03be42333901a887f55cf7eed698bdc9fca[m[33m ([m[1;31morigin/local-changes[m[33m, [m[1;31morigin/bugfix[m[33m)[m
+Author: tolo <tcatala@iedib.net>
+Date:   Thu Dec 19 11:56:12 2024 +0100
+
+    Arreglada opció de calendar
+
+[33mcommit c9d3d0bb2c7f95fccb9a2ad6883db3d908192b17[m
+Author: tolo <tcatala@iedib.net>
+Date:   Thu Dec 19 11:43:24 2024 +0100
+
+    Arreglada opció de users
+
+[33mcommit 03ef6ac07fab5e87da513cfc3a6e9a33ba295a1a[m[33m ([m[1;31morigin/feature/desconeguda[m[33m)[m
+Author: tcatalaI <tcatala@iedib.net>
+Date:   Wed Dec 18 09:44:15 2024 +0100
+
+    Afegim components albums
+
+[33mcommit eb9b76ea5385526cc3e7873ebb3b5cf98c33c547[m[33m ([m[1;31morigin/develop[m[33m)[m
+Author: tcatalaI <tcatala@iedib.net>
+Date:   Tue Dec 17 12:56:07 2024 +0100
+
+    Versió que funciona en local
+
+[33mcommit 1bea52988364a3ce829d6a9cac8230a7124bffa6[m
+Author: tcatalaI <tcatala@iedib.net>
+Date:   Wed Dec 11 12:01:08 2024 +0100
+
+    Primera versió
+
+[33mcommit 27136c064a6bf83c3e6f3729f933b978953586bb[m
+Author: tcatalaI <tcatala@iedib.net>
+Date:   Wed Dec 11 09:19:22 2024 +0100
+
+    initial commit
