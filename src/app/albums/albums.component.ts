@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { ApiService } from '../api.service';
 export class AlbumsComponent implements OnInit {
   albums: any[] = [];
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private router: Router) { }
 
   ngOnInit(): void {
     this.loadAlbums();
@@ -24,5 +25,9 @@ export class AlbumsComponent implements OnInit {
         console.error('Error in subscription:', error);
       }
     });
+  }
+
+  viewPhotos(albumId: number): void {
+    this.router.navigate(['/albums', albumId, 'photos']);
   }
 }

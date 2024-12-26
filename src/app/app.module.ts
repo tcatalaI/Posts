@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 import { CommentsComponent } from './comments/comments.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AlbumsComponent } from './albums/albums.component';
     PostsComponent,
     CommentsComponent,
     AlbumsComponent,
+    PhotosComponent,
   ],
   imports: [
     BrowserModule,
