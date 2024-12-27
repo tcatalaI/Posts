@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - develop # Canvia 'develop' a 'main' o la branca que prefereixis
+      - main # Canvia 'develop' a 'main' o la branca que prefereixis
 
 jobs:
   build:
