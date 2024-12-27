@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - develop  # Canvia 'develop' a 'main' o la branca que prefereixis
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.19.1'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build --prod
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "Tolo"
+          git config --global user.email "tcatala@iedib.net"
+
+   - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx angular-cli-ghpages --dir=dist/my-angular-app --no-silent
