@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - develop  # Canvia 'develop' a 'main' o la branca que prefereixis
+      - develop # Canvia 'develop' a 'main' o la branca que prefereixis
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npx angular-cli-ghpages --dir=dist/my-angular-app --no-silent
+          npx angular-cli-ghpages --dir=dist/copilot --no-silent
