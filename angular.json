@@ -16,6 +16,7 @@
             "outputPath": "dist/copilot",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref": "/Posts/",
             "polyfills": [
               "zone.js"
             ],
@@ -43,7 +44,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "fileReplacements": []
             },
             "development": {
               "buildOptimizer": false,
